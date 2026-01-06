@@ -99,11 +99,24 @@ npm run preview
 
 ## Deployment
 
-You can deploy this portfolio to various platforms:
+### GitHub Pages (Recommended)
 
+This project is configured for GitHub Pages deployment. See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed instructions.
+
+Quick steps:
+1. Create a repository on GitHub named `personal-portfolio`
+2. Push your code: `git push -u origin main`
+3. Install dependencies: `npm install`
+4. Deploy: `npm run deploy`
+5. Enable GitHub Pages in repository settings
+
+Your portfolio will be live at: `https://YOUR_USERNAME.github.io/personal-portfolio/`
+
+### Other Platforms
+
+You can also deploy to:
 - **Vercel**: Connect your GitHub repo and deploy automatically
 - **Netlify**: Drag and drop the `dist` folder or connect your repo
-- **GitHub Pages**: Use the `dist` folder contents
 - **Any static hosting service**: Upload the `dist` folder
 
 ## Project Structure

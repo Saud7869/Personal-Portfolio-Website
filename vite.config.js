@@ -4,6 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/personal-portfolio/', // Change this to your repository name
+  // For GitHub Pages: use '/repository-name/' if repo is not username.github.io
+  // For custom domain or username.github.io, use '/'
+  base: process.env.NODE_ENV === 'production' ? '/personal-portfolio/' : '/',
 })
 
